@@ -44,7 +44,7 @@
         {{ 'Note that if they have another category, your products will logically remain associated with it.'|trans({}, 'Admin.Catalog.Notification') }}
       </span>
       <div class="d-none">
-        {{ form_widget(deleteCategoriesForm.categories_to_delete) }}
+        {{ form_widget(deleteCategoriesForm.categories_to_delete_parent, { 'attr': {'value': app.request.get('categoryId') } }) }}
       </div>
     </div>
   {% endblock %}
