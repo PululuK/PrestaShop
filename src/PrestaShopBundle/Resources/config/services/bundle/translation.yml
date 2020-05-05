@@ -181,9 +181,7 @@ services:
     prestashop.translation.api.stock:
         class: PrestaShopBundle\Translation\Api\StockApi
         parent: prestashop.translation.api
-        public: true
 
     prestashop.translation.api.international:
         class: PrestaShopBundle\Translation\Api\InternationalApi
         parent: prestashop.translation.api
-        public: true
