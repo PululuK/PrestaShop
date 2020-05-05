@@ -86,7 +86,6 @@ services:
         - '@twig.extension.routing'
         - '@prestashop.core.uti.back_url_provider'
         - '@=service("request_stack") ? service("request_stack") : null'
-      public: true
       tags:
         - { name: twig.extension }
 
