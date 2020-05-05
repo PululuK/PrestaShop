@@ -46,7 +46,6 @@ services:
         tags:
             - name: tactician.handler
               command: PrestaShop\PrestaShop\Core\Domain\CmsPageCategory\Command\AddCmsPageCategoryCommand
-        public: true
 
     prestashop.adapter.cms_page.command_handler.edit_cms_page_category_handler:
         class: 'PrestaShop\PrestaShop\Adapter\CMS\PageCategory\CommandHandler\EditCmsPageCategoryHandler'
@@ -54,7 +53,6 @@ services:
         tags:
           - name: tactician.handler
             command: PrestaShop\PrestaShop\Core\Domain\CmsPageCategory\Command\EditCmsPageCategoryCommand
-        public: true
 
   # Query handlers
 
