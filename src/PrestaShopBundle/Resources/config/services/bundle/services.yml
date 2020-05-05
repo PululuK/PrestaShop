@@ -84,7 +84,6 @@ services:
     prestashop.router:
         class: PrestaShopBundle\Service\Routing\Router
         parent: 'router.default'
-        public: true
         calls:
           - ['setTokenManager', ['@security.csrf.token_manager']]
           - ['setUserProvider', ["@=service('prestashop.user_provider')"]]
