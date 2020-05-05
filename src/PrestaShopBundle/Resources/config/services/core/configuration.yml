@@ -7,7 +7,6 @@ services:
 
     prestashop.core.configuration.php_extension_checker:
         class: 'PrestaShop\PrestaShop\Core\Configuration\PhpExtensionChecker'
-        public: true
 
     prestashop.core.configuration.upload_size_configuration:
         class: 'PrestaShop\PrestaShop\Core\Configuration\UploadSizeConfiguration'
