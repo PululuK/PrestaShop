@@ -414,11 +414,6 @@ abstract class PaymentModuleCore extends Module
                         }
                     }
 
-                    // Insert new Order detail list using cart for the current order
-                    //$orderDetail = new OrderDetail(null, null, $this->context);
-                    //$orderDetail->createList($order, $this->context->cart, $id_order_state);
-
-                    // Construct order detail table for the email
                     $products_list = '';
                     $virtual_product = true;
 
